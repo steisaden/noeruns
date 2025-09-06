@@ -1,0 +1,16 @@
+[
+  {
+    "sessionId": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "date": "2025-10-05T14:00:00.000Z",
+    "location": "Tulsa Union High School Gym",
+    "maxCapacity": 20,
+    "registeredCount": 15
+  },
+  {
+    "sessionId": "a9f9a260-3e5d-4a1c-9c43-0e15f5a1f9be",
+    "date": "2025-10-12T14:00:00.000Z",
+    "location": "Tulsa Union High School Gym",
+    "maxCapacity": 20,
+    "registeredCount": 8
+  }
+]

@@ -1,0 +1,25 @@
+.masonry {
+  columns: 3 280px;
+  column-gap: 1rem;
+}
+
+.item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 4px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--red), var(--navy)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--red), transparent 30%), color-mix(in srgb, var(--navy), transparent 30%))
+      border-box;
+  border: 2px solid transparent;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

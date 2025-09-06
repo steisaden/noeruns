@@ -1,0 +1,24 @@
+.magnetic {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  width: 180px;
+  height: 52px;
+  border-radius: 16px;
+  border: 1px solid color-mix(in srgb, var(--navy), transparent 70%);
+  background: var(--white);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.inner {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transform: translate(var(--x, 0), var(--y, 0));
+  transition: transform 120ms ease;
+  font-weight: 700;
+  color: var(--navy);
+}

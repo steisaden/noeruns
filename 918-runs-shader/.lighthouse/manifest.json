@@ -1,0 +1,41 @@
+[
+  {
+    "url": "http://localhost:60134/index.html",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_07.report.html",
+    "jsonPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_07.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 1,
+      "best-practices": 0.96,
+      "seo": 1,
+      "pwa": 0.38
+    }
+  },
+  {
+    "url": "http://localhost:60134/index.html",
+    "isRepresentativeRun": false,
+    "htmlPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_33.report.html",
+    "jsonPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_33.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 1,
+      "best-practices": 0.96,
+      "seo": 1,
+      "pwa": 0.38
+    }
+  },
+  {
+    "url": "http://localhost:60134/index.html",
+    "isRepresentativeRun": true,
+    "htmlPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_21.report.html",
+    "jsonPath": "/Users/steisaden/Documents/noeruns/noeruns/918-runs-shader/.lighthouse/localhost-_index_html-2025_09_06_22_25_21.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 1,
+      "best-practices": 0.96,
+      "seo": 1,
+      "pwa": 0.38
+    }
+  }
+]

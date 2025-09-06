@@ -1,0 +1,13 @@
+.card {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--white), transparent 70%),
+      transparent
+    ), var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  padding: 1rem;
+}

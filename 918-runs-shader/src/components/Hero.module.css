@@ -1,0 +1,60 @@
+.hero {
+  position: relative;
+  overflow: clip;
+}
+
+.canvasWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.fallback {
+  width: 100%;
+  height: 60vh;
+  background: radial-gradient(1200px 600px at 20% 30%, color-mix(in srgb, var(--red), transparent 60%), transparent),
+    radial-gradient(1000px 500px at 80% 50%, color-mix(in srgb, var(--navy), transparent 60%), transparent),
+    var(--cream);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.headline {
+  font-family: var(--font-sans-1);
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.sub {
+  font-family: var(--font-sans-2);
+  color: color-mix(in srgb, var(--navy), transparent 30%);
+  margin: 0;
+}
+
+.reveal {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--navy), var(--red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: clip-reveal 1.2s ease both;
+}
+
+@keyframes clip-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}

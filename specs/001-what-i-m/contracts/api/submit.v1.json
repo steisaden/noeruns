@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Registration Submission API v1",
+  "description": "Contract for submitting player registration data to the Vercel serverless function.",
+  "type": "object",
+  "properties": {
+    "request": {
+      "description": "The payload sent from the React client.",
+      "type": "object",
+      "properties": {
+        "playerName": { "type": "string", "minLength": 2 },
+        "playerEmail": { "type": "string", "format": "email" },
+        "playerGrade": { "enum": ["6th", "7th", "8th", "9th", "10th", "11th", "12th"] },
+        "parentName": { "type": "string", "minLength": 2 },
+        "parentEmail": { "type": "string", "format": "email" },
+        "parentPhone": { "type": "string", "pattern": "^\\(\\d{3}\\) \\d{3}-\\d{4}$" },
+        "emergencyContact": { "type": "string", "minLength": 2 },
+        "waiverAccepted": { "type": "boolean", "const": true },
+        "improvementGoals": { "type": "array", "items": { "type": "string" } },
+        "sessionId": { "type": "string", "format": "uuid" }
+      },
+      "required": [
+        "playerName",
+        "playerEmail",
+        "playerGrade",
+        "parentName",
+        "parentEmail",
+        "parentPhone",
+        "emergencyContact",
+        "waiverAccepted",
+        "sessionId"
+      ]
+    },
+    "response": {
+      "description": "The payload returned from the serverless function.",
+      "type": "object",
+      "properties": {
+        "success": { "type": "boolean" },
+        "message": { "type": "string" },
+        "registrationId": { "type": "string", "format": "uuid" }
+      },
+      "required": ["success", "message"]
+    }
+  }
+}
