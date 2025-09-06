@@ -79,3 +79,7 @@ Artifacts land in `.lighthouse/`.
 
 - Colors via CSS vars only: `--red`, `--navy`, `--cream`, `--white`
 - Typography: Montserrat + Open Sans
+
+---
+
+CI: LHCI test PR – touching README to trigger the Lighthouse CI workflow.
