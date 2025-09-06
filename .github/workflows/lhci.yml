@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm'
+          cache-dependency-path: 918-runs-shader/pnpm-lock.yaml
 
       - name: Install deps
         run: pnpm install --frozen-lockfile
