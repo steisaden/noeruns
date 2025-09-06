@@ -57,6 +57,8 @@ Steps:
 
 ## Lighthouse
 
+CI on PRs runs Lighthouse via LHCI. You can also run it locally:
+
 To generate a local Lighthouse report without starting a server:
 
 ```bash

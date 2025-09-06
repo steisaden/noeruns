@@ -1,0 +1,44 @@
+name: Lighthouse CI
+
+on:
+  pull_request:
+    paths:
+      - '918-runs-shader/**'
+  workflow_dispatch: {}
+
+jobs:
+  lhci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+        working-directory: ./918-runs-shader
+
+      - name: Build
+        run: pnpm build
+        working-directory: ./918-runs-shader
+
+      - name: Run LHCI
+        run: pnpm dlx @lhci/cli@0.13.0 autorun --collect.staticDistDir=dist --upload.target=temporary-public-storage
+        working-directory: ./918-runs-shader
+
+      - name: Upload LHCI reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lhci-reports
+          path: 918-runs-shader/.lighthouse

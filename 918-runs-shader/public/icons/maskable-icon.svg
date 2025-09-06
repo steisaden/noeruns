@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="mask">
+      <rect x="32" y="32" width="448" height="448" rx="96"/>
+    </clipPath>
+  </defs>
+  <rect width="512" height="512" fill="#F5F1E8"/>
+  <g clip-path="url(#mask)">
+    <circle cx="176" cy="256" r="96" fill="#C8262D"/>
+    <rect x="256" y="160" width="128" height="192" rx="32" fill="#0F1B2D"/>
+  </g>
+</svg>
