@@ -1,5 +1,7 @@
 # 918 Runs Shader MVP
 
+Live site: https://steisaden.github.io/noeruns/
+
 Mobile‑first React SPA with shader hero, registration, highlights gallery, and newsletter.
 
 - Frontend: Vite + React
